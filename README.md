@@ -1,27 +1,19 @@
-# Tarmac concrete plants and CHRYSO representatives
+# Saint-Gobain Watertight Concrete Contacts
 
-A static, interactive Leaflet map showing 84 Tarmac concrete/readymix locations and the corresponding CHRYSO representative coverage.
+An interactive map of 84 Tarmac concrete/readymix locations and their CHRYSO representative contacts.
 
 ## Website
 
-The site is a single static `index.html` file. It uses CDN-hosted Leaflet, Bootstrap and map-control libraries, so visitors need an internet connection for the map tiles and interface assets.
+https://sgccjjm.github.io/saint-gobain-watertight-concrete-contacts/
 
-## Publish with GitHub Pages
+The site is a static `index.html` file published by GitHub Pages from the `main` branch, repository root. Commit an updated file to redeploy.
 
-1. Create a new **public** GitHub repository, for example `chryso-tarmac-coverage-map`.
-2. Upload all files from this package to the repository root and commit them to `main`.
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`, then save.
+## Map background
 
-The public address will normally be:
+The map uses Leaflet and standard OpenStreetMap tiles, with visible OpenStreetMap attribution. It does not require a CARTO API key. The previous CARTO endpoint returned blurred tiles marked “API KEY REQUIRED”, so it was replaced in September 2026.
 
-`https://YOUR-GITHUB-USERNAME.github.io/chryso-tarmac-coverage-map/`
-
-## Maintenance
-
-Replace `index.html` with a regenerated map and retain the filename. GitHub Pages will redeploy after the commit.
+An internet connection is required for tiles and CDN-hosted interface libraries. OpenStreetMap tile service is best-effort and subject to its [usage policy](https://operations.osmfoundation.org/policies/tiles/); this site uses normal interactive browser requests and caching, with no bulk or offline downloads.
 
 ## Data note
 
-Plant marker coordinates in this map are approximate locality centroids rather than verified plant-gate coordinates. Contact names, telephone numbers and email addresses are visible to anyone who can access a public deployment.
+The 84 original location records, territory filters, plant search and representative contacts are retained. Coordinates are approximate locality centroids rather than verified plant-gate coordinates. Contact names, business telephone numbers and email addresses are visible in this public deployment.
